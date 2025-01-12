@@ -38,7 +38,7 @@ def pytest_generate_tests(metafunc: Metafunc):
         case _:
             raise ValueError(f"Unsupported browser: {target_browser_option}")
     logger.info(f"Running tests on {supported_browsers}")
-    metafunc.parametrize("target_browser", supported_browsers)
+    metafunc.parametrize("target_driver", supported_browsers, indirect=True)
 
 
 @pytest.fixture(scope="session")
@@ -58,3 +58,11 @@ def driver_factory():
                 raise ValueError(f"Unsupported browser: {browser}")
 
     yield _make_driver
+
+
+@pytest.fixture(scope="function")
+def target_driver(request, driver_factory):
+    target_driver_value = request.param
+    driver = driver_factory(target_driver_value)
+    yield driver
+    driver.quit()
