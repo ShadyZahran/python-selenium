@@ -10,8 +10,13 @@ class ParabankLoginSection(BasePage):
     USERNAME_FIELD: Locator = (By.XPATH, "//input[@name='username']", 5)
     PASSWORD_FIELD: Locator = (By.XPATH, "//input[@name='password']", 5)
     LOGIN_BUTTON: Locator = (By.XPATH, "//input[@value='Log In']", 5)
+    
     GREETING_MESSAGE: Locator = (By.XPATH, "//p[@class='smallText']", 5)
     ERROR_TITLE: Locator = (By.XPATH, "//h1[normalize-space()='Error!']", 5)
+    ERROR_MESSAGE: Locator = (By.XPATH, "//p[@class='error']", 5)
+
+    login_error_message_empty_fields = "Please enter a username and password."
+    login_error_message_invalid_credentials = "The username and password could not be verified."
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -28,3 +33,9 @@ class ParabankLoginSection(BasePage):
 
     def is_error_title_located(self) -> bool:
         return self.is_element_located(self.ERROR_TITLE)
+    
+    def is_error_message_invalid_credentials(self) -> bool:
+        return self.get_text(self.ERROR_MESSAGE) == self.login_error_message_invalid_credentials
+
+    def is_error_message_empty_fields(self) -> bool:
+        return self.get_text(self.ERROR_MESSAGE) == self.login_error_message_empty_fields
