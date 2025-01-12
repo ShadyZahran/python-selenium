@@ -1,15 +1,16 @@
 import logging
+from enum import Enum
 
 import pytest
 from pytest import Metafunc
 from selenium import webdriver
 
-from enum import Enum
 
 class Browser(Enum):
     CHROME = "chrome"
     FIREFOX = "firefox"
     ALL = "all"
+
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -26,7 +27,7 @@ def pytest_addoption(parser):
 
 
 def pytest_generate_tests(metafunc: Metafunc):
-    target_browser_option = Browser(metafunc.config.getoption("--target-browser")) 
+    target_browser_option = Browser(metafunc.config.getoption("--target-browser"))
     match target_browser_option:
         case Browser.CHROME:
             supported_browsers = ["chrome"]

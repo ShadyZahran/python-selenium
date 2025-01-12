@@ -2,8 +2,6 @@ import pytest
 from index_page import ParabankIndexPage
 
 
-
-
 @pytest.mark.parametrize("username, password", [("john", "invalid")])
 def test_login_invalid_credentials(
     username,
@@ -20,6 +18,7 @@ def test_login_invalid_credentials(
     assert index_page.login_section.is_error_message_invalid_credentials()
 
     created_driver.quit()
+
 
 @pytest.mark.parametrize("username, password", [("", "")])
 def test_login_empty_fields(

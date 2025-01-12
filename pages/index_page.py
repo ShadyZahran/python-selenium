@@ -7,7 +7,6 @@ logger = logging.getLogger(__name__)
 
 
 class ParabankIndexPage(BasePage):
-    
     def __init__(self, driver):
         super().__init__(driver)
         self.url = "https://parabank.parasoft.com/parabank/index.htm"
