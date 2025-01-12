@@ -1,4 +1,5 @@
 import logging
+import subprocess
 from enum import Enum
 
 import pytest
@@ -47,13 +48,24 @@ def driver_factory():
         match browser:
             case Browser.CHROME.value:
                 chrome_options = webdriver.ChromeOptions()
+                chrome_options.set_capability("goog:loggingPrefs", {"browser": "ALL"})
                 chrome_options.add_argument("--headless")
-                driver = webdriver.Chrome(options=chrome_options)
+                chrome_service = webdriver.ChromeService(
+                    log_output=subprocess.STDOUT, service_args=["--log-level=DEBUG"]
+                )
+                driver = webdriver.Chrome(
+                    service=chrome_service, options=chrome_options
+                )
                 return driver
             case Browser.FIREFOX.value:
                 firefox_options = webdriver.FirefoxOptions()
                 firefox_options.add_argument("--headless")
-                return webdriver.Firefox(options=firefox_options)
+                firefox_service = webdriver.FirefoxService(
+                    log_output=subprocess.STDOUT, service_args=["--log", "debug"]
+                )
+                return webdriver.Firefox(
+                    service=firefox_service, options=firefox_options
+                )
             case _:
                 raise ValueError(f"Unsupported browser: {browser}")
 
