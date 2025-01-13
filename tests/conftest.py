@@ -2,6 +2,7 @@ import logging
 import subprocess
 from enum import Enum
 
+import allure
 import pytest
 from pytest import Metafunc
 from selenium import webdriver
@@ -74,7 +75,18 @@ def driver_factory():
 
 @pytest.fixture(scope="function")
 def target_driver(request, driver_factory):
-    target_driver_value = request.param
-    driver = driver_factory(target_driver_value)
+    target_driver_value: str = request.param
+    driver: webdriver = driver_factory(target_driver_value)
     yield driver
+    Attach_screenshot(driver, f"test_{request.node.name}")
     driver.quit()
+
+
+@allure.step("Attaching screenshot")
+def Attach_screenshot(driver: webdriver, name: str):
+    screenshot = driver.get_screenshot_as_png()
+    allure.attach(
+        screenshot,
+        name=name,
+        attachment_type=allure.attachment_type.PNG,
+    )
