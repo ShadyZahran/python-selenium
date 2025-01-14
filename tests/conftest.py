@@ -11,6 +11,7 @@ from selenium import webdriver
 class Browser(Enum):
     CHROME = "chrome"
     FIREFOX = "firefox"
+    EDGE = "edge"
     ALL = "all"
 
 
@@ -35,8 +36,10 @@ def pytest_generate_tests(metafunc: Metafunc):
             supported_browsers = ["chrome"]
         case Browser.FIREFOX:
             supported_browsers = ["firefox"]
+        case Browser.EDGE:
+            supported_browsers = ["edge"]
         case Browser.ALL:
-            supported_browsers = ["chrome", "firefox"]
+            supported_browsers = ["chrome", "firefox", "edge"]
         case _:
             raise ValueError(f"Unsupported browser: {target_browser_option}")
     logger.info(f"Running tests on {supported_browsers}")
@@ -67,6 +70,13 @@ def driver_factory():
                 return webdriver.Firefox(
                     service=firefox_service, options=firefox_options
                 )
+            case Browser.EDGE.value:
+                edge_options = webdriver.EdgeOptions()
+                edge_options.add_argument("--headless")
+                edge_service = webdriver.EdgeService(
+                    log_output=subprocess.STDOUT, service_args=["--log-level=DEBUG"]
+                )
+                return webdriver.Edge(service=edge_service, options=edge_options)
             case _:
                 raise ValueError(f"Unsupported browser: {browser}")
 
