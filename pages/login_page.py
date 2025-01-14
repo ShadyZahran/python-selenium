@@ -15,8 +15,8 @@ class ParabankLoginSection(BasePage):
     ERROR_TITLE: Locator = (By.XPATH, "//h1[normalize-space()='Error!']", 5)
     ERROR_MESSAGE: Locator = (By.XPATH, "//p[@class='error']", 5)
 
-    login_error_message_empty_fields = "Please enter a username and password."
-    login_error_message_invalid_credentials = (
+    error_message_empty_fields = "Please enter a username and password."
+    error_message_invalid_credentials = (
         "The username and password could not be verified."
     )
 
@@ -35,14 +35,3 @@ class ParabankLoginSection(BasePage):
 
     def is_error_title_located(self) -> bool:
         return self.is_element_located(self.ERROR_TITLE)
-
-    def is_error_message_invalid_credentials(self) -> bool:
-        return (
-            self.get_text(self.ERROR_MESSAGE)
-            == self.login_error_message_invalid_credentials
-        )
-
-    def is_error_message_empty_fields(self) -> bool:
-        return (
-            self.get_text(self.ERROR_MESSAGE) == self.login_error_message_empty_fields
-        )

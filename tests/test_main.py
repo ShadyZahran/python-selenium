@@ -15,7 +15,8 @@ def test_login_invalid_credentials(
     index_page.load()
     index_page.login_section.login(username, password)
 
-    assert index_page.login_section.is_error_message_invalid_credentials()
+    error_message = index_page.get_text(index_page.login_section.ERROR_MESSAGE)
+    assert error_message == index_page.login_section.error_message_invalid_credentials
 
 
 @allure.feature("Login")
@@ -30,4 +31,5 @@ def test_login_empty_fields(
     index_page.load()
     index_page.login_section.login(username, password)
 
-    assert index_page.login_section.is_error_message_empty_fields()
+    error_message = index_page.get_text(index_page.login_section.ERROR_MESSAGE)
+    assert error_message == index_page.login_section.error_message_empty_fields
