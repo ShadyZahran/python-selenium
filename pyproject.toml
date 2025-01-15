@@ -10,6 +10,7 @@ dependencies = [
     "selenium (>=4.27.1,<5.0.0)",
     "allure-pytest (>=2.13.5,<3.0.0)",
     "allure-python-commons (>=2.13.5,<3.0.0)",
+    "mypy (>=1.14.1,<2.0.0)",
 ]
 
 [build-system]
@@ -22,3 +23,8 @@ package-mode = false
 [tool.pytest.ini_options]
 pythonpath = "pages"
 addopts = ["--alluredir", "allure-results"]
+
+[tool.mypy]
+disable_error_code = ["import-untyped"]
+ignore_missing_imports = true
+strict = true
