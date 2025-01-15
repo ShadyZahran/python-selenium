@@ -42,8 +42,8 @@ def pytest_generate_tests(metafunc: Metafunc):
             supported_browsers = ["chrome", "firefox", "edge"]
         case _:
             raise ValueError(f"Unsupported browser: {target_browser_option}")
-    logger.info(f"Running tests on {supported_browsers}")
-    metafunc.parametrize("target_driver", supported_browsers, indirect=True)
+    if "target_driver" in metafunc.fixturenames:
+        metafunc.parametrize("target_driver", supported_browsers, indirect=True)
 
 
 @pytest.fixture(scope="session")
