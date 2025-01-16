@@ -1,11 +1,13 @@
 import logging
 import subprocess
 from enum import Enum
+from typing import Callable, Generator
 
 import allure
 import pytest
-from pytest import Metafunc
+from pytest import FixtureRequest, Metafunc, Parser
 from selenium import webdriver
+from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class Browser(Enum):
@@ -19,7 +21,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 
-def pytest_addoption(parser):
+def pytest_addoption(parser: Parser) -> None:
     parser.addoption(
         "--target-browser",
         action="store",
@@ -29,7 +31,7 @@ def pytest_addoption(parser):
     )
 
 
-def pytest_generate_tests(metafunc: Metafunc):
+def pytest_generate_tests(metafunc: Metafunc) -> None:
     target_browser_option = Browser(metafunc.config.getoption("--target-browser"))
     match target_browser_option:
         case Browser.CHROME:
@@ -47,8 +49,8 @@ def pytest_generate_tests(metafunc: Metafunc):
 
 
 @pytest.fixture(scope="session")
-def driver_factory():
-    def _make_driver(browser) -> webdriver:
+def driver_factory() -> Generator[Callable[[str], WebDriver], None, None]:
+    def _make_driver(browser: str) -> WebDriver:
         match browser:
             case Browser.CHROME.value:
                 chrome_options = webdriver.ChromeOptions()
@@ -84,16 +86,18 @@ def driver_factory():
 
 
 @pytest.fixture(scope="function")
-def target_driver(request, driver_factory):
+def target_driver(
+    request: FixtureRequest, driver_factory: Callable[[str], WebDriver]
+) -> Generator[WebDriver, None, None]:
     target_driver_value: str = request.param
-    driver: webdriver = driver_factory(target_driver_value)
+    driver: WebDriver = driver_factory(target_driver_value)
     yield driver
     Attach_screenshot(driver, f"test_{request.node.name}")
     driver.quit()
 
 
 @allure.step("Attaching screenshot")
-def Attach_screenshot(driver: webdriver, name: str):
+def Attach_screenshot(driver: WebDriver, name: str) -> None:
     screenshot = driver.get_screenshot_as_png()
     allure.attach(
         screenshot,

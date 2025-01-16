@@ -1,7 +1,9 @@
 import logging
 
-from base_page import BasePage, Locator
 from selenium.webdriver.common.by import By
+from selenium.webdriver.remote.webdriver import WebDriver
+
+from pages.base_page import BasePage, Locator
 
 logger = logging.getLogger(__name__)
 
@@ -20,10 +22,10 @@ class ParabankLoginSection(BasePage):
         "The username and password could not be verified."
     )
 
-    def __init__(self, driver):
+    def __init__(self, driver: WebDriver):
         super().__init__(driver)
 
-    def login(self, username, password):
+    def login(self, username: str, password: str) -> None:
         self.click(self.USERNAME_FIELD)
         self.input_text(self.USERNAME_FIELD, username)
         self.click(self.PASSWORD_FIELD)
@@ -31,7 +33,9 @@ class ParabankLoginSection(BasePage):
         self.click(self.LOGIN_BUTTON)
 
     def get_greeting_message(self) -> str:
-        return self.get_text(self.GREETING_MESSAGE)
+        result: str = self.get_text(self.GREETING_MESSAGE)
+        return result
 
     def is_error_title_located(self) -> bool:
-        return self.is_element_located(self.ERROR_TITLE)
+        result: bool = self.is_element_located(self.ERROR_TITLE)
+        return result

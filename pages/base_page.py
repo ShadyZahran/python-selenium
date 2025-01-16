@@ -1,25 +1,26 @@
 import logging
-from typing import TypeAlias
+from typing import Tuple
 
-from selenium import webdriver
+from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 logger = logging.getLogger(__name__)
 
-Locator: TypeAlias = tuple[
+Locator = Tuple[
     str, str, int
 ]  # strategy, value, timeout -> example: (By.XPATH, "//input[@name='username']", 5)
 
 
 class BasePage:
-    def __init__(self, driver: webdriver):
-        self.driver = driver
+    def __init__(self, driver: WebDriver):
+        self.driver: WebDriver = driver
+        self.url: str = ""
 
-    def load(self, url):
-        logger.info(f"Loading {url}")
-        self.driver.get(url)
+    def load(self) -> None:
+        logger.info(f"Loading {self.url}")
+        self.driver.get(self.url)
 
     def find_element(self, locator: Locator) -> WebElement:
         if self.is_element_located(locator):
@@ -28,21 +29,21 @@ class BasePage:
         else:
             raise Exception(f"Element not found: {locator[0]}={locator[1]}")
 
-    def click(self, locator: Locator):
-        element = self.find_element(locator)
+    def click(self, locator: Locator) -> None:
+        element: WebElement = self.find_element(locator)
         if self.is_element_clickable(locator):
             logger.info(f"Clicking element: {locator[0]}={locator[1]}")
             element.click()
         else:
             raise Exception(f"Element not clickable: {locator[0]}={locator[1]}")
 
-    def input_text(self, locator: Locator, text: str):
-        element = self.find_element(locator)
+    def input_text(self, locator: Locator, text: str) -> None:
+        element: WebElement = self.find_element(locator)
         logger.info(f"Typing '{text}' into element: {locator[0]}={locator[1]}")
         element.send_keys(text)
 
     def get_text(self, locator: Locator) -> str:
-        element = self.find_element(locator)
+        element: WebElement = self.find_element(locator)
         logger.info(f"Getting text from element: {locator[0]}={locator[1]}")
         return element.text
 
