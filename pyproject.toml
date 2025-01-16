@@ -25,7 +25,6 @@ pythonpath = "pages"
 addopts = ["--alluredir", "allure-results"]
 
 [tool.mypy]
-disable_error_code = ["import-untyped"]
 ignore_missing_imports = true
 strict = true
 disallow_untyped_decorators = false

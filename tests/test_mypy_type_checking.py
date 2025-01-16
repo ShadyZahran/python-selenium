@@ -30,6 +30,11 @@ def test_mypy_type_checking(folders: list[str]) -> None:
     files_paths = get_files_in_directories(folders)
     logger.info(f"Running mypy static type checking on folder(s): {folders}")
     normal_report, error_report, exit_status = mypy_api_run(
-        ["--ignore-missing-imports", "--strict", *files_paths]
+        [
+            "--ignore-missing-imports",
+            "--strict",
+            "--allow-untyped-decorators",
+            *files_paths,
+        ]
     )
     assert exit_status == 0, normal_report + error_report
