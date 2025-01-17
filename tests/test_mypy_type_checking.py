@@ -24,11 +24,12 @@ def get_files_in_directories(directories: list[str]) -> list[str]:
 
 @allure.feature("Static type checking")
 @allure.story("Mypy")
-@pytest.mark.parametrize("folders", [(["pages"]), (["tests"])])
+@pytest.mark.parametrize("folders", [(["pages"]), (["tests"]), (["interfaces"])])
 def test_mypy_type_checking(folders: list[str]) -> None:
     """Run mypy static type checking on the target folders."""
     files_paths = get_files_in_directories(folders)
     logger.info(f"Running mypy static type checking on folder(s): {folders}")
+    logger.info(f"Running mypy static type checking on file(s): {files_paths}")
     normal_report, error_report, exit_status = mypy_api_run(
         [
             "--ignore-missing-imports",
