@@ -30,3 +30,10 @@ jobs:
       with:
         name: allure-results
         path: allure-results
+
+  call_allure_reporter:
+    needs: run-tests
+    if: always()
+    uses: ShadyZahran/python-selenium/.github/workflows/run_allure_reporter.yml@main
+    with:
+      environment: 'Dev'
