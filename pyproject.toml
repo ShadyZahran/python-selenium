@@ -23,8 +23,8 @@ build-backend = "poetry.core.masonry.api"
 package-mode = false
 
 [tool.pytest.ini_options]
-pythonpath = "pages"
-addopts = ["--alluredir", "allure-results"]
+pythonpath = "."
+addopts = ["tests", "-o", "log_cli=true", "-v", "--alluredir", "allure-results"]
 
 [tool.mypy]
 ignore_missing_imports = true
