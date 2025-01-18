@@ -1,0 +1,48 @@
+name: Run Allure Reporter
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+
+jobs:
+  allure-reporter:
+    runs-on: ubuntu-latest
+    environment: Dev
+    
+    steps:
+    - name: Download allure artifact
+      uses: actions/download-artifact@v4
+
+    - name: Check allure results exists
+      run: |
+        if [ -d allure-results ]; then
+          exit 0
+        else
+          exit -1
+        fi
+
+    - name: Get Allure history
+      uses: actions/checkout@v4
+      continue-on-error: true
+      with:
+        ref: gh-pages
+        path: gh-pages
+
+    - name: Generate allure report with history
+      uses: simple-elf/allure-report-action@master
+      with:
+        allure_results: allure-results
+        gh_pages: gh-pages
+        allure_report: allure-report
+        allure_history: allure-history
+        subfolder: ${{inputs.environment}}
+
+    - name: Deploy report
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        publish_branch: gh-pages
+        publish_dir: allure-history
