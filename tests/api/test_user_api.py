@@ -1,5 +1,6 @@
 import logging
 
+import allure
 import pytest
 from conftest import get_valid_customer
 
@@ -8,6 +9,8 @@ from interfaces.parabank_backend_api import BackendAPI, CustomerProfile
 logger = logging.getLogger(__name__)
 
 
+@allure.feature("Login")
+@allure.story("API: Login with valid credentials")
 @pytest.mark.parametrize("customer_profile", get_valid_customer())
 def test_get_login_valid_credentials(
     customer_profile: CustomerProfile, backend_api: BackendAPI

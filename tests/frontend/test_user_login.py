@@ -6,7 +6,7 @@ from pages.index_page import ParabankIndexPage
 
 
 @allure.feature("Login")
-@allure.story("Login with invalid credentials")
+@allure.story("E2E: Login with invalid credentials")
 @pytest.mark.parametrize("username, password", [("john", "invalid")])
 def test_login_invalid_credentials(
     username: str,
@@ -22,7 +22,7 @@ def test_login_invalid_credentials(
 
 
 @allure.feature("Login")
-@allure.story("Login with empty fields")
+@allure.story("E2E: Login with empty fields")
 @pytest.mark.parametrize("username, password", [("", "")])
 def test_login_empty_fields(
     username: str,
