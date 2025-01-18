@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Run mypy static type checking on the target folders.","3268","test_mypy_type_checking[folders0]","tests.type_checking","Sat Jan 18 17:37:19 GMT 2025","passed","Sat Jan 18 17:37:22 GMT 2025","","test_mypy_type_checking","",""
+"Run mypy static type checking on the target folders.","2443","test_mypy_type_checking[folders1]","tests.type_checking","Sat Jan 18 17:37:22 GMT 2025","passed","Sat Jan 18 17:37:24 GMT 2025","","test_mypy_type_checking","",""
+"","1298","test_login_invalid_credentials[chrome-john-invalid]","tests.frontend","Sat Jan 18 17:37:16 GMT 2025","passed","Sat Jan 18 17:37:17 GMT 2025","","test_user_login","",""
+"","423","test_get_login_valid_credentials[customer_profile0]","tests.api","Sat Jan 18 17:37:13 GMT 2025","passed","Sat Jan 18 17:37:13 GMT 2025","","test_user_api","",""
+"","1141","test_login_empty_fields[chrome--]","tests.frontend","Sat Jan 18 17:37:17 GMT 2025","passed","Sat Jan 18 17:37:19 GMT 2025","","test_user_login","",""
+"Run mypy static type checking on the target folders.","347","test_mypy_type_checking[folders2]","tests.type_checking","Sat Jan 18 17:37:24 GMT 2025","passed","Sat Jan 18 17:37:25 GMT 2025","","test_mypy_type_checking","",""
