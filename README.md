@@ -49,8 +49,8 @@ poetry install
 ### Usage
 1. Run tests
 ```shell
-Run poetry run pytest # will run against all browsers (chrome, firefox and edge)
-Run poetry run pytest --target-browser chrome # will run only for chrome
+poetry run pytest # will run against all browsers (chrome, firefox and edge)
+poetry run pytest --target-browser chrome # will run only for chrome
 ```
 2. Generate and view the Allure report
 ```shell
