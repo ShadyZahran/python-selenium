@@ -52,6 +52,8 @@ poetry install
 poetry run pytest # will run against all browsers (chrome, firefox and edge)
 poetry run pytest --target-browser chrome # will run only for chrome
 ```
+> [!IMPORTANT]
+> check the `pyproject.toml` file for the implicit pytest configuration
 2. Generate and view the Allure report
 ```shell
 allure serve
