@@ -1,0 +1,5 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","","3","Login","0","0","E2E: Login with invalid credentials","0"
+"0","","0","Login","3","0","E2E: Login with empty fields","0"
+"0","","0","Static type checking","3","0","Mypy","0"
+"0","","0","Login","1","0","API: Login with valid credentials","0"

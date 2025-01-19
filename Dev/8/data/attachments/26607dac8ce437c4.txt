@@ -1,0 +1,283 @@
+1737272978420	geckodriver	INFO	Listening on 127.0.0.1:50519
+1737272978431	webdriver::server	DEBUG	-> POST /session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "firefox", "acceptInsecureCerts": true, ... ull, "moz:firefoxOptions": {"binary": "/usr/bin/firefox", "prefs": {"remote.active-protocols": 3}, "args": ["--headless"]}}}}
+1737272978431	geckodriver::capabilities	DEBUG	Trying to read firefox version from ini files
+1737272978432	geckodriver::capabilities	DEBUG	Found version 133.0.3
+1737272978433	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "49605" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilehIcm08"
+1737272978433	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+1737272978663	RemoteAgent	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.discoverystream.region-weather-config to 
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.newtabWallpapers.enabled to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.newtabWallpapers.v2.enabled to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.region.network.url to 
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.safebrowsing.blockedURIs.enabled to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.safebrowsing.downloads.enabled to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.safebrowsing.malware.enabled to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.safebrowsing.phishing.enabled to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.search.update to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.startup.couldRestoreSession.count to -1
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.remote.unloadDelayMs to 0
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnClose to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.topsites.contile.enabled to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.merino.endpointURL to 
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1737272978664	RemoteAgent	DEBUG	Setting recommended pref dom.file.createInChild to true
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minNumTicks to 0
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minTimeElapsedInMS to 0
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref dom.navigation.navigationRateLimit.count to 0
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref dom.screenorientation.allow-lock to true
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref dom.successive_dialog_time_limit to 0
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.detailsURL to http://%(server)s/extensions-dummy/blocklistDetailsURL
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.itemURL to http://%(server)s/extensions-dummy/blocklistItemURL
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref extensions.hotfix.url to http://%(server)s/extensions-dummy/hotfixURL
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref extensions.systemAddon.update.enabled to false
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref extensions.update.background.url to http://%(server)s/extensions-dummy/updateBackgroundURL
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref extensions.update.url to http://%(server)s/extensions-dummy/updateURL
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.get.url to http://%(server)s/extensions-dummy/repositoryGetURL
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.search.browseURL to http://%(server)s/extensions-dummy/repositoryBrowseURL
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref geo.provider.network.url to 
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref identity.fxaccounts.auth.uri to https://{server}/dummy/fxa
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref network.connectivity-service.enabled to false
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref network.http.phishy-userpass-length to 255
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref remote.prefs.recommended.applied to true
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref security.remote_settings.intermediates.enabled to false
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref signon.autofillForms to false
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref signon.rememberSignons to false
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref toolkit.telemetry.server to https://%(server)s/telemetry-dummy/
+1737272978665	RemoteAgent	DEBUG	Setting recommended pref widget.windows.window_occlusion_tracking.enabled to false
+1737272978666	RemoteAgent	DEBUG	WebDriver BiDi enabled
+1737272978666	RemoteAgent	DEBUG	CDP enabled
+1737272978666	Marionette	INFO	Marionette enabled
+1737272978759	Marionette	INFO	Listening on port 42547
+1737272978761	Marionette	DEBUG	Marionette is listening
+1737272978773	RemoteAgent	DEBUG	Setting recommended pref permissions.isolateBy.userContext to true
+1737272978773	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.features.standard to -tp,tpPrivate,cookieBehavior0,-cm,-fp
+1737272978773	RemoteAgent	DEBUG	Setting recommended pref network.cookie.useServerTime to false
+1737272978774	CDP	DEBUG	Waiting for initial application window
+Read port: 42547
+1737272978900	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:55478
+1737272978910	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:42547.
+1737272978917	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"normal"}]
+1737272978920	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1737272978921	Marionette	DEBUG	Waiting for initial application window
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+1737272980175	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"2e75391c-cc52-4307-98c7-21f0b8ff9e26","capabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"133.0.3","platformName":"linux","unhandledPromptBehavior":"dismiss and notify","userAgent":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0","moz:buildID":"20241209150345","moz:headless":true,"moz:platformVersion":"6.8.0-1017-azure","moz:processID":2881,"moz:profile":"/tmp/rust_mozprofilehIcm08","moz:shutdownTimeout":60000,"pageLoadStrategy":"normal","timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"setWindowRect":true,"strictFileInteractability":false,"moz:accessibilityChecks":false,"moz:debuggerAddress":"127.0.0.1:49605","moz:webdriverClick":true,"moz:windowless":false,"proxy":{}}}]
+1737272980183	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"2e75391c-cc52-4307-98c7-21f0b8ff9e26","capabilities":{"acceptInsecureCerts":true,"browserNam ... ehavior":"dismiss and notify","userAgent":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}}}
+1737272980185	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/url {"url": "https://parabank.parasoft.com/parabank/index.htm"}
+1737272980189	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"https://parabank.parasoft.com/parabank/index.htm"}]
+1737272981056	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1737272981059	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1737272981060	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@name='username']"}
+1737272981060	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"xpath","value":"//input[@name='username']"}]
+1737272981070	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}}]
+1737272981070	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}}
+1737272981071	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@name='username']"}
+1737272981074	Marionette	DEBUG	0 -> [0,4,"WebDriver:FindElement",{"using":"xpath","value":"//input[@name='username']"}]
+1737272981077	Marionette	DEBUG	0 <- [1,4,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}}]
+1737272981078	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}}
+1737272981079	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@name='username']"}
+1737272981079	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElement",{"using":"xpath","value":"//input[@name='username']"}]
+1737272981080	Marionette	DEBUG	0 <- [1,5,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}}]
+1737272981080	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}}
+1737272981081	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}]}
+1737272981082	Marionette	DEBUG	0 -> [0,6,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}],"script":"/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof a;if(\"object\"==b)if(a){i ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1737272981092	Marionette	DEBUG	0 <- [1,6,null,{"value":true}]
+1737272981092	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1737272981093	webdriver::server	DEBUG	-> GET /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element/e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e/enabled 
+1737272981094	Marionette	DEBUG	0 -> [0,7,"WebDriver:IsElementEnabled",{"id":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}]
+1737272981096	Marionette	DEBUG	0 <- [1,7,null,{"value":true}]
+1737272981097	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1737272981097	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element/e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e/click {}
+1737272981098	Marionette	DEBUG	0 -> [0,8,"WebDriver:ElementClick",{"id":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}]
+1737272981313	Marionette	DEBUG	0 <- [1,8,null,{"value":null}]
+1737272981313	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1737272981314	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@name='username']"}
+1737272981314	Marionette	DEBUG	0 -> [0,9,"WebDriver:FindElement",{"using":"xpath","value":"//input[@name='username']"}]
+1737272981315	Marionette	DEBUG	0 <- [1,9,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}}]
+1737272981315	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}}
+1737272981316	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@name='username']"}
+1737272981316	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElement",{"using":"xpath","value":"//input[@name='username']"}]
+1737272981317	Marionette	DEBUG	0 <- [1,10,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}}]
+1737272981317	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e"}}
+1737272981318	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element/e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e/value {"text": "", "value": []}
+1737272981319	Marionette	DEBUG	0 -> [0,11,"WebDriver:ElementSendKeys",{"id":"e72c3b68-ed17-4472-8e6e-8fa2d4dd4f5e","text":"","value":[]}]
+1737272981320	Marionette	DEBUG	0 <- [1,11,null,{"value":null}]
+1737272981320	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1737272981321	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@name='password']"}
+1737272981321	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElement",{"using":"xpath","value":"//input[@name='password']"}]
+1737272981322	Marionette	DEBUG	0 <- [1,12,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}}]
+1737272981322	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}}
+1737272981323	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@name='password']"}
+1737272981323	Marionette	DEBUG	0 -> [0,13,"WebDriver:FindElement",{"using":"xpath","value":"//input[@name='password']"}]
+1737272981324	Marionette	DEBUG	0 <- [1,13,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}}]
+1737272981324	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}}
+1737272981324	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@name='password']"}
+1737272981325	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElement",{"using":"xpath","value":"//input[@name='password']"}]
+1737272981325	Marionette	DEBUG	0 <- [1,14,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}}]
+1737272981325	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}}
+1737272981327	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "3cee6469-e1f5-4294-950c-e0b9a33ac397"}]}
+1737272981328	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}],"script":"/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof a;if(\"object\"==b)if(a){i ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1737272981332	Marionette	DEBUG	0 <- [1,15,null,{"value":true}]
+1737272981332	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1737272981333	webdriver::server	DEBUG	-> GET /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element/3cee6469-e1f5-4294-950c-e0b9a33ac397/enabled 
+1737272981333	Marionette	DEBUG	0 -> [0,16,"WebDriver:IsElementEnabled",{"id":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}]
+1737272981333	Marionette	DEBUG	0 <- [1,16,null,{"value":true}]
+1737272981333	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1737272981334	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element/3cee6469-e1f5-4294-950c-e0b9a33ac397/click {}
+1737272981334	Marionette	DEBUG	0 -> [0,17,"WebDriver:ElementClick",{"id":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}]
+1737272981539	Marionette	DEBUG	0 <- [1,17,null,{"value":null}]
+1737272981540	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1737272981541	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@name='password']"}
+1737272981541	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElement",{"using":"xpath","value":"//input[@name='password']"}]
+1737272981542	Marionette	DEBUG	0 <- [1,18,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}}]
+1737272981542	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}}
+1737272981543	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@name='password']"}
+1737272981543	Marionette	DEBUG	0 -> [0,19,"WebDriver:FindElement",{"using":"xpath","value":"//input[@name='password']"}]
+1737272981544	Marionette	DEBUG	0 <- [1,19,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}}]
+1737272981544	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"3cee6469-e1f5-4294-950c-e0b9a33ac397"}}
+1737272981545	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element/3cee6469-e1f5-4294-950c-e0b9a33ac397/value {"text": "", "value": []}
+1737272981545	Marionette	DEBUG	0 -> [0,20,"WebDriver:ElementSendKeys",{"id":"3cee6469-e1f5-4294-950c-e0b9a33ac397","text":"","value":[]}]
+1737272981546	Marionette	DEBUG	0 <- [1,20,null,{"value":null}]
+1737272981547	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1737272981547	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@value='Log In']"}
+1737272981547	Marionette	DEBUG	0 -> [0,21,"WebDriver:FindElement",{"using":"xpath","value":"//input[@value='Log In']"}]
+1737272981548	Marionette	DEBUG	0 <- [1,21,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"89970e11-70ff-4700-abc2-bddf957037bd"}}]
+1737272981548	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"89970e11-70ff-4700-abc2-bddf957037bd"}}
+1737272981549	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@value='Log In']"}
+1737272981549	Marionette	DEBUG	0 -> [0,22,"WebDriver:FindElement",{"using":"xpath","value":"//input[@value='Log In']"}]
+1737272981550	Marionette	DEBUG	0 <- [1,22,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"89970e11-70ff-4700-abc2-bddf957037bd"}}]
+1737272981550	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"89970e11-70ff-4700-abc2-bddf957037bd"}}
+1737272981550	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//input[@value='Log In']"}
+1737272981551	Marionette	DEBUG	0 -> [0,23,"WebDriver:FindElement",{"using":"xpath","value":"//input[@value='Log In']"}]
+1737272981551	Marionette	DEBUG	0 <- [1,23,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"89970e11-70ff-4700-abc2-bddf957037bd"}}]
+1737272981551	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"89970e11-70ff-4700-abc2-bddf957037bd"}}
+1737272981553	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "89970e11-70ff-4700-abc2-bddf957037bd"}]}
+1737272981554	Marionette	DEBUG	0 -> [0,24,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"89970e11-70ff-4700-abc2-bddf957037bd"}],"script":"/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof a;if(\"object\"==b)if(a){i ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1737272981558	Marionette	DEBUG	0 <- [1,24,null,{"value":true}]
+1737272981558	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1737272981559	webdriver::server	DEBUG	-> GET /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element/89970e11-70ff-4700-abc2-bddf957037bd/enabled 
+1737272981559	Marionette	DEBUG	0 -> [0,25,"WebDriver:IsElementEnabled",{"id":"89970e11-70ff-4700-abc2-bddf957037bd"}]
+1737272981559	Marionette	DEBUG	0 <- [1,25,null,{"value":true}]
+1737272981560	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1737272981560	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element/89970e11-70ff-4700-abc2-bddf957037bd/click {}
+1737272981561	Marionette	DEBUG	0 -> [0,26,"WebDriver:ElementClick",{"id":"89970e11-70ff-4700-abc2-bddf957037bd"}]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://parabank.parasoft.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://parabank.parasoft.com."
+1737272981731	Marionette	DEBUG	0 <- [1,26,null,{"value":null}]
+1737272981733	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1737272981734	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//p[@class='error']"}
+1737272981734	Marionette	DEBUG	0 -> [0,27,"WebDriver:FindElement",{"using":"xpath","value":"//p[@class='error']"}]
+1737272981736	Marionette	DEBUG	0 <- [1,27,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"02bc2bbf-8f5d-4866-8f7d-87efb147b371"}}]
+1737272981736	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"02bc2bbf-8f5d-4866-8f7d-87efb147b371"}}
+1737272981737	webdriver::server	DEBUG	-> POST /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element {"using": "xpath", "value": "//p[@class='error']"}
+console.error: ({})
+1737272981742	Marionette	DEBUG	0 -> [0,28,"WebDriver:FindElement",{"using":"xpath","value":"//p[@class='error']"}]
+1737272981743	Marionette	DEBUG	0 <- [1,28,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"02bc2bbf-8f5d-4866-8f7d-87efb147b371"}}]
+1737272981743	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"02bc2bbf-8f5d-4866-8f7d-87efb147b371"}}
+1737272981744	webdriver::server	DEBUG	-> GET /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/element/02bc2bbf-8f5d-4866-8f7d-87efb147b371/text 
+1737272981744	Marionette	DEBUG	0 -> [0,29,"WebDriver:GetElementText",{"id":"02bc2bbf-8f5d-4866-8f7d-87efb147b371"}]
+1737272981750	Marionette	DEBUG	0 <- [1,29,null,{"value":"Please enter a username and password."}]
+1737272981750	webdriver::server	DEBUG	<- 200 OK {"value":"Please enter a username and password."}
+1737272981752	webdriver::server	DEBUG	-> GET /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26/screenshot 
+1737272981752	Marionette	DEBUG	0 -> [0,30,"WebDriver:TakeScreenshot",{"full":false,"highlights":[],"id":null}]
+1737272981775	Marionette	DEBUG	0 <- [1,30,null,{"value":"iVBORw0KGgoAAAANSUhEUgAABVYAAAKqCAYAAADRzgX+AAAgAElEQVR4XuydB5glRbn+vzM7szO7O5t3ScuSc84iIEkkRwVFJIl6ETCRlWv2L1wQBbmAIIgYLoogG ... IECBAgAABAgQIECBAgAABAgQICKs+QIAAAQIECBAgQIAAAQIECBAgQIAAgSkgrE4wcwIECBAgQIAAAQIECBAgQIAAAQIECASiA9MoITyy6AAAAABJRU5ErkJggg=="}]
+1737272981780	webdriver::server	DEBUG	<- 200 OK {"value":"iVBORw0KGgoAAAANSUhEUgAABVYAAAKqCAYAAADRzgX+AAAgAElEQVR4XuydB5glRbn+vzM7szO7O5t3ScuSc84iIEkkRwVFJIl6ETCRl ... CBAgAABAgQIECBAgAABAgQICKs+QIAAAQIECBAgQIAAAQIECBAgQIAAgSkgrE4wcwIECBAgQIAAAQIECBAgQIAAAQIECASiA9MoITyy6AAAAABJRU5ErkJggg=="}
+1737272981783	webdriver::server	DEBUG	-> DELETE /session/2e75391c-cc52-4307-98c7-21f0b8ff9e26 
+1737272981783	Marionette	DEBUG	0 -> [0,31,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1737272981784	Marionette	INFO	Stopped listening on port 42547
+1737272982163	RemoteAgent	DEBUG	Resetting recommended pref apz.content_response_timeout
+1737272982163	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1737272982163	RemoteAgent	DEBUG	Resetting recommended pref browser.download.panel.shown
+1737272982163	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.discoverystream.region-weather-config
+1737272982163	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.newtabWallpapers.enabled
+1737272982164	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.newtabWallpapers.v2.enabled
+1737272982164	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites
+1737272982164	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1737272982165	RemoteAgent	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1737272982165	RemoteAgent	DEBUG	Resetting recommended pref browser.region.network.url
+1737272982165	RemoteAgent	DEBUG	Resetting recommended pref browser.safebrowsing.blockedURIs.enabled
+1737272982167	RemoteAgent	DEBUG	Resetting recommended pref browser.safebrowsing.downloads.enabled
+1737272982171	RemoteAgent	DEBUG	Resetting recommended pref browser.safebrowsing.malware.enabled
+1737272982173	RemoteAgent	DEBUG	Resetting recommended pref browser.safebrowsing.phishing.enabled
+1737272982175	RemoteAgent	DEBUG	Resetting recommended pref browser.search.update
+1737272982175	RemoteAgent	DEBUG	Resetting recommended pref browser.startup.couldRestoreSession.count
+1737272982175	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.remote.unloadDelayMs
+1737272982175	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1737272982175	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnClose
+1737272982175	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1737272982175	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1737272982175	RemoteAgent	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1737272982175	RemoteAgent	DEBUG	Resetting recommended pref browser.topsites.contile.enabled
+1737272982175	RemoteAgent	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1737272982176	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.merino.endpointURL
+1737272982177	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1737272982178	RemoteAgent	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1737272982178	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1737272982178	RemoteAgent	DEBUG	Resetting recommended pref dom.file.createInChild
+1737272982178	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minNumTicks
+1737272982178	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minTimeElapsedInMS
+1737272982178	RemoteAgent	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1737272982178	RemoteAgent	DEBUG	Resetting recommended pref dom.max_script_run_time
+1737272982179	RemoteAgent	DEBUG	Resetting recommended pref dom.navigation.navigationRateLimit.count
+1737272982179	RemoteAgent	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1737272982179	RemoteAgent	DEBUG	Resetting recommended pref dom.screenorientation.allow-lock
+1737272982179	RemoteAgent	DEBUG	Resetting recommended pref dom.successive_dialog_time_limit
+1737272982179	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1737272982179	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1737272982180	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.detailsURL
+1737272982180	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.itemURL
+1737272982180	RemoteAgent	DEBUG	Resetting recommended pref extensions.hotfix.url
+1737272982180	RemoteAgent	DEBUG	Resetting recommended pref extensions.systemAddon.update.enabled
+1737272982180	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.background.url
+1737272982180	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.url
+1737272982181	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.get.url
+1737272982181	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.search.browseURL
+1737272982181	RemoteAgent	DEBUG	Resetting recommended pref geo.provider.network.url
+1737272982181	RemoteAgent	DEBUG	Resetting recommended pref identity.fxaccounts.auth.uri
+1737272982181	RemoteAgent	DEBUG	Resetting recommended pref network.connectivity-service.enabled
+1737272982181	RemoteAgent	DEBUG	Resetting recommended pref network.http.phishy-userpass-length
+1737272982182	RemoteAgent	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1737272982182	RemoteAgent	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1737272982182	RemoteAgent	DEBUG	Resetting recommended pref remote.prefs.recommended.applied
+1737272982182	RemoteAgent	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1737272982182	RemoteAgent	DEBUG	Resetting recommended pref security.notification_enable_delay
+1737272982182	RemoteAgent	DEBUG	Resetting recommended pref security.remote_settings.intermediates.enabled
+1737272982182	RemoteAgent	DEBUG	Resetting recommended pref signon.autofillForms
+1737272982183	RemoteAgent	DEBUG	Resetting recommended pref signon.rememberSignons
+1737272982183	RemoteAgent	DEBUG	Resetting recommended pref toolkit.telemetry.server
+1737272982183	RemoteAgent	DEBUG	Resetting recommended pref widget.windows.window_occlusion_tracking.enabled
+1737272982183	RemoteAgent	DEBUG	Resetting recommended pref permissions.isolateBy.userContext
+1737272982183	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1737272982183	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.useServerTime
+1737272982184	Marionette	DEBUG	Marionette stopped listening
+1737272982184	Marionette	DEBUG	0 <- [1,31,null,{"cause":"shutdown","forced":false,"in_app":true}]
+1737272982213	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1737272982213	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.useServerTime
+1737272982213	webdriver::server	DEBUG	Teardown session
+1737272982216	Marionette	DEBUG	Closed connection 0
+1737272982414	geckodriver::browser	DEBUG	Browser process stopped: exit status: 0
+1737272982424	webdriver::server	DEBUG	<- 200 OK {"value":null}

@@ -1,0 +1,2 @@
+INFO     test_mypy_type_checking:test_mypy_type_checking.py:31 Running mypy static type checking on folder(s): ['pages']
+INFO     test_mypy_type_checking:test_mypy_type_checking.py:32 Running mypy static type checking on file(s): ['/home/runner/work/python-selenium/python-selenium/pages/base_page.py', '/home/runner/work/python-selenium/python-selenium/pages/__init__.py', '/home/runner/work/python-selenium/python-selenium/pages/index_page.py', '/home/runner/work/python-selenium/python-selenium/pages/login_page.py']

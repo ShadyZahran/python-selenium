@@ -1,0 +1,13 @@
+INFO     pages.base_page:base_page.py:22 Loading https://parabank.parasoft.com/parabank/index.htm
+INFO     pages.base_page:base_page.py:27 Element located: xpath=//input[@name='username']
+INFO     pages.base_page:base_page.py:35 Clicking element: xpath=//input[@name='username']
+INFO     pages.base_page:base_page.py:27 Element located: xpath=//input[@name='username']
+INFO     pages.base_page:base_page.py:42 Typing '' into element: xpath=//input[@name='username']
+INFO     pages.base_page:base_page.py:27 Element located: xpath=//input[@name='password']
+INFO     pages.base_page:base_page.py:35 Clicking element: xpath=//input[@name='password']
+INFO     pages.base_page:base_page.py:27 Element located: xpath=//input[@name='password']
+INFO     pages.base_page:base_page.py:42 Typing '' into element: xpath=//input[@name='password']
+INFO     pages.base_page:base_page.py:27 Element located: xpath=//input[@value='Log In']
+INFO     pages.base_page:base_page.py:35 Clicking element: xpath=//input[@value='Log In']
+INFO     pages.base_page:base_page.py:27 Element located: xpath=//p[@class='error']
+INFO     pages.base_page:base_page.py:47 Getting text from element: xpath=//p[@class='error']
