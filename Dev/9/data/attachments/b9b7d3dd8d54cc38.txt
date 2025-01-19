@@ -1,0 +1,6 @@
+INFO     interfaces.parabank_backend_api:parabank_backend_api.py:78 [200] GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+INFO     interfaces.parabank_backend_api:parabank_backend_api.py:81 Response text: [{"id":13344,"customerId":12212,"type":"CHECKING","balance":4922.93},{"id":13677,"customerId":12212,"type":"CHECKING","balance":100.00}]
+INFO     test_user_api:test_user_api.py:37 Account(id=13344, customerId=12212, type='CHECKING', balance=4922.93)
+INFO     test_user_api:test_user_api.py:37 Account(id=13677, customerId=12212, type='CHECKING', balance=100.0)
+INFO     interfaces.parabank_backend_api:parabank_backend_api.py:78 [400] GET https://parabank.parasoft.com/parabank/services/bank/accounts/12345
+INFO     interfaces.parabank_backend_api:parabank_backend_api.py:81 Response text: Could not find account #12345

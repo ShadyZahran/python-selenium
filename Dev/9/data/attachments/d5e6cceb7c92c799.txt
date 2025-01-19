@@ -1,0 +1,8 @@
+Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 38413
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+msedgedriver was started successfully on port 38413.

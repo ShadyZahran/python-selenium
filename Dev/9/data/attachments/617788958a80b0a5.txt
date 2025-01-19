@@ -1,0 +1,2 @@
+INFO     interfaces.parabank_backend_api:parabank_backend_api.py:78 [200] GET https://parabank.parasoft.com/parabank/services/bank/login/john/demo
+INFO     interfaces.parabank_backend_api:parabank_backend_api.py:81 Response text: {"id":12212,"firstName":"John","lastName":"Smith","address":{"street":"1431 Main St","city":"Beverly Hills","state":"CA","zipCode":"90210"},"phoneNumber":"310-447-4121","ssn":"622-11-9999"}

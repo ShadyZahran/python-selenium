@@ -1,0 +1,1 @@
+INFO     test_user_api:test_user_api.py:63 Successfully deposited $100.0 to account #13344!
