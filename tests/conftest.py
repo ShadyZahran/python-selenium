@@ -33,7 +33,7 @@ def pytest_addoption(parser: Parser) -> None:
     parser.addoption(
         "--target-browser",
         action="store",
-        default=Browser.CHROME.value,
+        default=Browser.ALL.value,
         help="The target browser for the tests",
         choices=[browser.value for browser in Browser],
     )
