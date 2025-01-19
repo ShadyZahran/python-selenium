@@ -56,3 +56,19 @@ Run poetry run pytest --target-browser [chrome] # will run only for chrome
 ```shell
 allure serve
 ```
+## Project Structure
+* `/tests`
+    * `/api` API tests
+    * `/frontend` Frontend tests
+    * `/type_checking` Type checking tests
+    * `conftest.py` Configuration and setup for testcase execution
+* `/pages`
+    * `base_page.py` Parent class with common functionality to be used by child page classes
+* `/interfaces`
+    * `parabank_backend_api.py` This contains the modeled requests against the project openapi schema, to be utilizied by the tests
+* `.github/workflows`
+    * `run_tests_dev.yml` workflow to run tests on dev environment
+    * `run_allure_reporter.yml` workflow to generate allure report from the test results and deploy it on the designated github pages branch
+
+### Process diagram
+![process-diagram](images/process_diagram.svg)
