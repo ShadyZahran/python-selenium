@@ -14,7 +14,7 @@ The following documentation aims to explain the project features, installation a
     * Page Object Model (POM) used to model the target webpages.
     * Multi-browser test execution (Chrome, Firefox, Edge).
 * API testing
-    * API interface modeled against the OpenAPI schema enhancing tests orchestration.
+    * API interface modeling against the target OpenAPI schema, enhancing tests orchestration.
 * Static type checking
     * Using Mypy, static type checking is implemented as tests in the test suite.
 * Reporting
