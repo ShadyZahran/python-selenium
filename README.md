@@ -70,7 +70,7 @@ allure serve
     * `parabank_backend_api.py` This contains the modeled requests against the project openapi schema, to be utilizied by the tests
 * `.github/workflows`
     * `run_tests_dev.yml` workflow to run tests on dev environment
-    * `run_allure_reporter.yml` workflow to generate allure report from the test results and deploy it on the designated github pages branch
+    * `run_allure_reporter.yml` workflow to generate allure report from the test results and deploy it on the designated github pages branch and environment subdirectory
 
 ### Process diagram
 This section shows how the process is setup to execute on the CI/CD pipeline
