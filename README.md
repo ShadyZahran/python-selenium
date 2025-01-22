@@ -73,4 +73,6 @@ allure serve
     * `run_allure_reporter.yml` workflow to generate allure report from the test results and deploy it on the designated github pages branch
 
 ### Process diagram
+This section shows how the process is setup to execute on the CI/CD pipeline
+
 ![process-diagram](images/process_diagram.svg)
