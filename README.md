@@ -3,7 +3,7 @@
 </div>
 
 ## Overview
-This project was created to act as a starting point and practise for future frameworks using the same technology stack ``(Python, Pytest, Selenium, Allure Report)``.
+This project was created to act as a template and practise for future frameworks using the same technology stack ``(Python, Pytest, Selenium, Allure Report)``.
 
 This framework is developed against Parabank's test website (https://parabank.parasoft.com/parabank/index.htm) and the respective OpenAPI services (https://parabank.parasoft.com/parabank/api-docs/index.html) as a target.
 
@@ -26,7 +26,7 @@ The following documentation aims to explain the project features, installation a
     * Allure report is deployed to GitHub pages for better accessibilty.
     * Designated landing page for multi-environment (Dev, Stage, Production) support.
 > [!NOTE]
-> Allure reports landing page: (https://shadyzahran.github.io/python-selenium/)
+> Allure reports custom landing page: (https://shadyzahran.github.io/python-selenium/)
 
 ## Getting Started
 The project is currently setup to run in a CI/CD environment, but it can also be used locally as follows:
