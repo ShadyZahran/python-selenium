@@ -5,7 +5,7 @@
 ## Overview
 This project was created to act as a template and practise for future frameworks using the same technology stack ``(Python, Pytest, Selenium, Allure Report)``.
 
-This framework is developed against Parabank's test website (https://parabank.parasoft.com/parabank/index.htm) and the respective OpenAPI services (https://parabank.parasoft.com/parabank/api-docs/index.html) as a target.
+This framework is developed against practicesoftwaretesting website (https://practicesoftwaretesting.com/) and the respective API (https://api.practicesoftwaretesting.com/api/documentation) as a target.
 
 The following documentation aims to explain the project features, installation and structure for future reference and scalability.
 
@@ -67,7 +67,7 @@ allure serve
 * `/pages`
     * `base_page.py` Parent class with common functionality to be used by child page classes
 * `/interfaces`
-    * `parabank_backend_api.py` This contains the modeled requests against the project openapi schema, to be utilizied by the tests
+    * `practice_backend_api.py` This contains the modeled requests against the project openapi schema, to be utilizied by the tests
 * `.github/workflows`
     * `run_tests_dev.yml` workflow to run tests on dev environment
     * `run_allure_reporter.yml` workflow to generate allure report from the test results and deploy it on the designated github pages branch and environment subdirectory

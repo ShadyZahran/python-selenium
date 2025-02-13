@@ -9,13 +9,7 @@ from pytest import FixtureRequest, Metafunc, Parser
 from selenium import webdriver
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from interfaces.parabank_backend_api import (
-    Address,
-    Auth,
-    BackendAPI,
-    Customer,
-    CustomerProfile,
-)
+from interfaces.practice_backend_api import PracticeBackendAPI
 
 
 class Browser(Enum):
@@ -114,22 +108,7 @@ def Attach_screenshot(driver: WebDriver, name: str) -> None:
     )
 
 
-def get_valid_customer() -> Generator[CustomerProfile, None, None]:
-    user = CustomerProfile(
-        credentials=Auth("john", "demo"),
-        data=Customer(
-            id=12212,
-            firstName="John",
-            lastName="Smith",
-            address=Address("Main street", "Main City", "Main State", "12345"),
-            phoneNumber="12345678",
-            ssn="123456789",
-        ),
-    )
-    yield user
-
-
 @pytest.fixture(scope="session")
-def backend_api() -> Generator[BackendAPI, None, None]:
-    api = BackendAPI("https://parabank.parasoft.com/parabank/services/bank")
+def practice_backend_api() -> Generator[PracticeBackendAPI, None, None]:
+    api = PracticeBackendAPI()
     yield api
