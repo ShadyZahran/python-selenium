@@ -22,6 +22,7 @@ def test_customer_login_valid_credentials(
     login_page = LoginPage(target_driver)
     login_page.load()
     login_page.login(email, password)
+    login_page.wait_for_login_redirection()
 
     displayed_name: str = login_page.nav_bar.get_signed_in_username()
     assert displayed_name == fullname

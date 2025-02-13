@@ -2,6 +2,8 @@ import logging
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.base_page import BasePage, Locator
 from pages.nav_bar_page import NavBar
@@ -13,6 +15,7 @@ class LoginPage(BasePage):
     EMAIL_INPUT: Locator = (By.ID, "email", 5)
     PASSWORD_INPUT: Locator = (By.ID, "password", 5)
     LOGIN_BUTTON: Locator = (By.CSS_SELECTOR, "[data-test='login-submit']", 5)
+    LOGIN_REDIRECTION_URL = "https://practicesoftwaretesting.com/account"
 
     def __init__(self, driver: WebDriver):
         super().__init__(driver)
@@ -34,3 +37,6 @@ class LoginPage(BasePage):
         self.fill_email(username)
         self.fill_password(password)
         self.click_login()
+
+    def wait_for_login_redirection(self) -> None:
+        WebDriverWait(self.driver, 5, 1).until(EC.url_to_be(self.LOGIN_REDIRECTION_URL))
