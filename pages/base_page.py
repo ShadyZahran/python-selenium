@@ -23,7 +23,7 @@ class BasePage:
         self.driver.get(self.url)
 
     def find_element(self, locator: Locator) -> WebElement:
-        if self.is_element_located(locator):
+        if self.is_element_located_and_visible(locator):
             logger.info(f"Element located: {locator[0]}={locator[1]}")
             return self.driver.find_element(*locator[:2])
         else:
@@ -47,10 +47,10 @@ class BasePage:
         logger.info(f"Getting text from element: {locator[0]}={locator[1]}")
         return element.text
 
-    def is_element_located(self, locator: Locator) -> bool:
+    def is_element_located_and_visible(self, locator: Locator) -> bool:
         try:
             WebDriverWait(self.driver, locator[2]).until(
-                EC.presence_of_element_located(locator[:2])
+                EC.visibility_of_element_located(locator[:2])
             )
         except Exception:
             return False
