@@ -9,7 +9,6 @@ This framework is developed against the following website and the respective API
 * (https://practicesoftwaretesting.com/) 
 * (https://api.practicesoftwaretesting.com/api/documentation)
 
-The following documentation aims to explain the project features, installation and structure for future reference and scalability.
 
 ### Features
 * Frontend testing
@@ -60,7 +59,8 @@ poetry run pytest --target-browser chrome # will run only for chrome
 ```shell
 allure serve
 ```
-## Project Structure
+## Project Breakdown
+### File Structure
 * `/tests`
     * `/api` API tests
     * `/frontend` Frontend tests
@@ -74,7 +74,13 @@ allure serve
     * `run_tests_dev.yml` workflow to run tests on dev environment
     * `run_allure_reporter.yml` workflow to generate allure report from the test results and deploy it on the designated github pages branch and environment subdirectory
 
+### System boundary
+This diagram shows the overall system components and how they interface with one another, while outlining the system components that are under the test scope:
+
+![process-diagram](images/system_under_test.svg)
+
+
 ### Process diagram
-This section shows how the process is setup to execute on the CI/CD pipeline
+This diagram shows how the process is setup to execute on the CI/CD pipeline:
 
 ![process-diagram](images/process_diagram.svg)
