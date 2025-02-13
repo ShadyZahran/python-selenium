@@ -4,7 +4,7 @@ import allure
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from pages.auth_login_page import AuthLoginPage
+from pages.login_page import LoginPage
 
 logger = logging.getLogger(__name__)
 
@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 def test_login_valid_credentials(
     email: str, password: str, fullname: str, target_driver: WebDriver
 ) -> None:
-    login_page = AuthLoginPage(target_driver)
+    login_page = LoginPage(target_driver)
     login_page.load()
     login_page.login(email, password)
 
