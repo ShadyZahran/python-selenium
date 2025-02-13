@@ -5,7 +5,9 @@
 ## Overview
 This project was created to act as a template and practise for future frameworks using the same technology stack ``(Python, Pytest, Selenium, Allure Report)``.
 
-This framework is developed against practicesoftwaretesting website (https://practicesoftwaretesting.com/) and the respective API (https://api.practicesoftwaretesting.com/api/documentation) as a target.
+This framework is developed against the following website and the respective API:
+* (https://practicesoftwaretesting.com/) 
+* (https://api.practicesoftwaretesting.com/api/documentation)
 
 The following documentation aims to explain the project features, installation and structure for future reference and scalability.
 
