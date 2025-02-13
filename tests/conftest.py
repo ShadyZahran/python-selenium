@@ -20,7 +20,7 @@ class Browser(Enum):
 
 
 logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 
 def pytest_addoption(parser: Parser) -> None:
