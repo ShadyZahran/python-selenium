@@ -77,10 +77,10 @@ allure serve
 ### System boundary
 This diagram shows the overall system components and how they interface with one another, while outlining the system components that are under the test scope:
 
-![process-diagram](images/system_under_test.svg)
+![process-diagram](docs/images/system_under_test.svg)
 
 
 ### Process diagram
 This diagram shows how the process is setup to execute on the CI/CD pipeline:
 
-![process-diagram](images/process_diagram.svg)
+![process-diagram](docs/images/process_diagram.svg)
