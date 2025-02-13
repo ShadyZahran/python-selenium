@@ -58,6 +58,7 @@ def driver_factory() -> Generator[Callable[[str], WebDriver], None, None]:
                 chrome_options = webdriver.ChromeOptions()
                 chrome_options.set_capability("goog:loggingPrefs", {"browser": "ALL"})
                 chrome_options.add_argument("--headless")
+                chrome_options.add_argument("--window-size=1920,1080")
                 chrome_service = webdriver.ChromeService(
                     log_output=subprocess.STDOUT, service_args=["--log-level=DEBUG"]
                 )
@@ -68,6 +69,8 @@ def driver_factory() -> Generator[Callable[[str], WebDriver], None, None]:
             case Browser.FIREFOX.value:
                 firefox_options = webdriver.FirefoxOptions()
                 firefox_options.add_argument("--headless")
+                firefox_options.add_argument("--width=1920")
+                firefox_options.add_argument("--height=1080")
                 firefox_service = webdriver.FirefoxService(
                     log_output=subprocess.STDOUT, service_args=["--log", "debug"]
                 )
@@ -77,6 +80,7 @@ def driver_factory() -> Generator[Callable[[str], WebDriver], None, None]:
             case Browser.EDGE.value:
                 edge_options = webdriver.EdgeOptions()
                 edge_options.add_argument("--headless")
+                edge_options.add_argument("--window-size=1920,1080")
                 edge_service = webdriver.EdgeService(
                     log_output=subprocess.STDOUT, service_args=["--log-level=DEBUG"]
                 )
