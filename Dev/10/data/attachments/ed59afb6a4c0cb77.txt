@@ -1,0 +1,2 @@
+INFO     test_mypy_type_checking:test_mypy_type_checking.py:31 Running mypy static type checking on folder(s): ['interfaces']
+INFO     test_mypy_type_checking:test_mypy_type_checking.py:32 Running mypy static type checking on file(s): ['/home/runner/work/python-selenium/python-selenium/interfaces/__init__.py', '/home/runner/work/python-selenium/python-selenium/interfaces/practice_backend_api.py']

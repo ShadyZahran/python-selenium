@@ -1,0 +1,13 @@
+INFO     pages.base_page:base_page.py:22 Loading https://practicesoftwaretesting.com/auth/login
+INFO     pages.base_page:base_page.py:27 Element located: id=email
+INFO     pages.base_page:base_page.py:35 Clicking element: id=email
+INFO     pages.base_page:base_page.py:27 Element located: id=email
+INFO     pages.base_page:base_page.py:42 Typing 'customer@practicesoftwaretesting.com' into element: id=email
+INFO     pages.base_page:base_page.py:27 Element located: id=password
+INFO     pages.base_page:base_page.py:35 Clicking element: id=password
+INFO     pages.base_page:base_page.py:27 Element located: id=password
+INFO     pages.base_page:base_page.py:42 Typing 'welcome01' into element: id=password
+INFO     pages.base_page:base_page.py:27 Element located: css selector=[data-test='login-submit']
+INFO     pages.base_page:base_page.py:35 Clicking element: css selector=[data-test='login-submit']
+INFO     pages.base_page:base_page.py:27 Element located: css selector=a[data-test='nav-menu']
+INFO     pages.base_page:base_page.py:47 Getting text from element: css selector=a[data-test='nav-menu']
