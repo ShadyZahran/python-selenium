@@ -14,8 +14,9 @@ logger = logging.getLogger(__name__)
 @pytest.mark.parametrize(
     "email, password", [("customer@practicesoftwaretesting.com", "welcome01")]
 )
-def test_user_login(
+def test_customer_login_valid_credentials(
     email: str, password: str, practice_backend_api: PracticeBackendAPI
 ) -> None:
+    """Test user login endpoint using valid customer credentials"""
     response = practice_backend_api.user_controller.login(email, password)
     assert response.status_code == HTTPStatus.OK

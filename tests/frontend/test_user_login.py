@@ -15,9 +15,10 @@ logger = logging.getLogger(__name__)
     "email, password, fullname",
     [("customer@practicesoftwaretesting.com", "welcome01", "Jane Doe")],
 )
-def test_login_valid_credentials(
+def test_customer_login_valid_credentials(
     email: str, password: str, fullname: str, target_driver: WebDriver
 ) -> None:
+    """Test login functionality using valid customer credentials"""
     login_page = LoginPage(target_driver)
     login_page.load()
     login_page.login(email, password)
