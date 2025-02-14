@@ -5,7 +5,7 @@
 ## Overview
 This project was created to act as a template and practise for future frameworks using the same technology stack ``(Python, Pytest, Selenium, Allure Report)``.
 
-This framework is developed against the following website and the respective API:
+This framework is developed against the following practice website and the respective API:
 * (https://practicesoftwaretesting.com/) 
 * (https://api.practicesoftwaretesting.com/api/documentation)
 
@@ -18,16 +18,17 @@ This framework is developed against the following website and the respective API
     * API interface modeling against the target OpenAPI schema, enhancing tests orchestration.
 * Static type checking
     * Using Mypy, static type checking is implemented as tests in the test suite.
+* CI/CD integration
+    * Test runs are integrated and triggered using GitHub actions.
+    * Test report is deployed to GitHub pages for better accessibilty.
 * Reporting
     * Console logs, browser logs and screenshots are collected at the end of each testcase.
     * Allure report is generated using the test results from Pytest.
     * The collected logs and screenshots are attached to the Allure report for each testcase.
-* CI/CD integration
-    * Test runs are integrated and triggered using GitHub actions.
-    * Allure report is deployed to GitHub pages for better accessibilty.
-    * Designated landing page for multi-environment (Dev, Stage, Production) support.
+    * Designated landing page for multi-environment support (Dev, Stage, Production).
+
 > [!NOTE]
-> Allure reports custom landing page: (https://shadyzahran.github.io/python-selenium/)
+> Test reports custom landing page: (https://shadyzahran.github.io/python-selenium/)
 
 ## Getting Started
 The project is currently setup to run in a CI/CD environment, but it can also be used locally as follows:
