@@ -34,7 +34,7 @@ def test_customer_login_valid_credentials(
 def test_customer_login_valid_response(
     email: str, password: str, practice_backend_api: PracticeBackendAPI
 ) -> None:
-    """Test user login endpoint has valid response using valid customer credentials"""
+    """Test user login endpoint has valid json response using valid customer credentials"""
 
     expected_keys = ["access_token", "token_type", "expires_in"]
 
@@ -43,3 +43,17 @@ def test_customer_login_valid_response(
 
     assert response.status_code == HTTPStatus.OK
     assert not missing_keys, f"{missing_keys} not found in response"
+
+
+@allure.feature("Login")
+@allure.story("API: Login with invalid credentials")
+@pytest.mark.parametrize("email, password", [("invalid_customer", "invalid_password")])
+def test_customer_login_invalid_credentials(
+    email: str, password: str, practice_backend_api: PracticeBackendAPI
+) -> None:
+    """Test user login endpoint returns unauthorized response using invalid customer credentials"""
+
+    response = practice_backend_api.user_controller.login(email, password)
+
+    assert response.status_code == HTTPStatus.UNAUTHORIZED
+    assert response.json()["error"] == "Unauthorized"
