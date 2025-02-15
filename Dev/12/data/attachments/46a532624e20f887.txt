@@ -1,0 +1,2 @@
+INFO     interfaces.practice_backend_api:practice_backend_api.py:31 [401] POST https://api.practicesoftwaretesting.com/users/login
+INFO     interfaces.practice_backend_api:practice_backend_api.py:34 Response text: {"error":"Unauthorized"}
