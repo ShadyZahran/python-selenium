@@ -8,34 +8,33 @@
     <style>
         :root {
             --bg-color: #f8f9fa;
-            /* Light gray */
             --text-color: #343a40;
-            /* Dark gray */
             --header-color: #212529;
-            /* Almost black */
             --link-bg-color: #2b6cb0;
-            /* Allure blue */
             --link-hover-bg-color: #2c5282;
-            /* Darker Allure blue */
             --disabled-bg-color: #e2e8f0;
-            /* Light gray for disabled */
             --disabled-text-color: #a0aec0;
-            /* Muted gray text */
             --accent-color: #48bb78;
-            /* Green accent */
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
-            background: var(--bg-color);
-            color: var(--text-color);
+            flex: 1;
+            text-align: center;
         }
 
         h1 {
@@ -45,7 +44,7 @@
             color: var(--header-color);
         }
 
-        h2 {
+        h2{
             font-size: 1.5rem;
             margin-bottom: 2rem;
             font-weight: normal;
@@ -82,7 +81,26 @@
             padding: 1rem 2rem;
             border-radius: 8px;
             cursor: not-allowed;
+        }
+
+        footer {
+            padding: 1rem;
+            font-size: 1rem;
+            color: var(--disabled-text-color);
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--text-color);
+            text-decoration: underline;
+            background: none;
+            padding: 0;
             box-shadow: none;
+        }
+
+        footer a:hover {
+            background-color: #fff;
+            color: var(--link-hover-bg-color);
         }
 
         .logo {
@@ -94,14 +112,20 @@
 </head>
 
 <body>
-    <img src="./images/logo.png" alt="Allure Report Logo" class="logo">
-    <h1>Allure Report</h1>
-    <h2>Select Your Environment</h2>
-    <div class="links">
-        <a href="./Dev/" target="_blank">Development</a>
-        <span class="disabled" title="Not available yet">Staging</span>
-        <span class="disabled" title="Not available yet">Production</span>
-    </div>
+    <main>
+        <img src="./images/logo.png" alt="Allure Report Logo" class="logo">
+        <h1>Allure Report</h1>
+        <h2>Python Selenium Project</h2>
+        <h3>Select Your Environment</h3>
+        <div class="links">
+            <a href="./Dev/" target="_blank">Development</a>
+            <span class="disabled" title="Not available yet">Staging</span>
+            <span class="disabled" title="Not available yet">Production</span>
+        </div>
+    </main>
 </body>
+<footer>
+    Powered by <a href="https://allurereport.org/">Allure Report</a>
+</footer>
 
 </html>
