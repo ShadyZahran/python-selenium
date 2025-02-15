@@ -50,7 +50,7 @@ class PracticeBackendAPI:
 
         def login(self, email: str, password: str) -> requests.Response:
             response = self._post_login(email, password)
-            if response.status_code == HTTPStatus.OK:
+            if response.status_code in [HTTPStatus.OK, HTTPStatus.UNAUTHORIZED]:
                 return response
             else:
                 raise Exception(response.status_code, response.reason)
